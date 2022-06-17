@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:Workshop.Models"
              xmlns:viewmodels="clr-namespace:Workshop.ViewModels"
+             Title="{Binding Title}"
              x:Class="Workshop.MainPage">
 
     <ContentPage.BindingContext>
@@ -20,7 +21,9 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <CollectionView BackgroundColor="Azure" Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding Monkeys}">
+        <CollectionView BackgroundColor="Azure" SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged"
+                        Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding Monkeys}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Monkey">
                     <StackLayout Orientation="Horizontal" Padding="10">
@@ -39,8 +42,12 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button Command="{Binding GetMonkeysCommand}"  Grid.Row="1" Grid.Column="0" Text="Load"></Button>
-        <Button Grid.Row="1" Grid.Column="1" Text="x"></Button>
+        <Button IsEnabled="{Binding IsNotLoading}" Command="{Binding GetMonkeysCommand}"  Grid.Row="1" Grid.Column="0" Text="Load"></Button>
+        <Button Grid.Row="1" Command="{Binding GetClosestMonkeyCommand}" Grid.Column="1" Text="Find Closest"></Button>
+        <ActivityIndicator 
+            Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}"></ActivityIndicator>
     </Grid>
 
 

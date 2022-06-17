@@ -10,7 +10,11 @@ namespace Workshop
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.Red,
+                BarTextColor =  Color.White
+            };
         }
 
         protected override void OnStart()

@@ -24,6 +24,7 @@ namespace Workshop.ViewModels
                 if (isLoading == value) return;
                 isLoading = value;
                 OnPropertyChanged();
+                OnPropertyChanged("IsNotLoading");
             }
         }
 
@@ -36,5 +37,7 @@ namespace Workshop.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool IsNotLoading => !IsLoading;
     }
 }

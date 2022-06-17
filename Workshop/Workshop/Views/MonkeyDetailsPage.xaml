@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             x:Class="Workshop.Views.MonkeyDetailsPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Rectangle BackgroundColor="Beige" Grid.ColumnSpan="2"
+                       HeightRequest="100" HorizontalOptions="FillAndExpand"></Rectangle>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="{Binding SelectedMonkey.Image}"
+                   HeightRequest="100" VerticalOptions="Center" WidthRequest="100" Aspect="AspectFill">
+                <Image.Clip>
+                    <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50">
+                    </EllipseGeometry>
+                </Image.Clip>
+            </Image>
+
+            <Label FontSize="Large" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" Text="{Binding SelectedMonkey.Name}"></Label>
+            <Label Margin="10" FontSize="Micro" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Text="{Binding SelectedMonkey.Population}"></Label>
+            <Label Margin="10" FontSize="Micro" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" Text="{Binding SelectedMonkey.Location}"></Label>
+            <Label Margin="10"  HorizontalOptions="Center" Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding SelectedMonkey.Details}"></Label>
+
+        </Grid>
+
+            
+        
+    </ContentPage.Content>
+</ContentPage>
