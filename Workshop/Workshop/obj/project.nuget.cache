@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Y4+HJHxBMh+eFINstYtufsE6/BpvcS47p08WQ4Tfo63bk3mSWyiEixMW86Lc/gL6TCo0SwSsDUK4sONodo7n2Q==",
+  "dgSpecHash": "sPHK3vR8GhnyITFJbQHsytAQOIS4bi5afODAqo7ITqvsQpjGGfL/J0mcDz8HMkNPI+9TWUE/7l1+sQxnZkUJig==",
   "success": true,
   "projectFilePath": "E:\\corsi\\workshopcorso\\Workshop\\Workshop\\Workshop\\Workshop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\salvatore\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\salvatore\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"

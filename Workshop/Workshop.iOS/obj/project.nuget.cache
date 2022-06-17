@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UQ56wgkUb5ZFuHwY3jr6q5dqHwQdGYMBjixCSTq/eqCcZVv1IaqBY3C8EjsUhH4syOkqUP2UXSUQQJsIA1WQxg==",
+  "dgSpecHash": "LVMOVSor3yVFJAdUI+Ca81Ikrsusc0FtuxGK1EeKZKD2bQZ0vFlY2SyXcVae4hDC2zUxEqJVddyTb02yf94odA==",
   "success": true,
   "projectFilePath": "E:\\corsi\\workshopcorso\\Workshop\\Workshop\\Workshop.iOS\\Workshop.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\salvatore\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\salvatore\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
